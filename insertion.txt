@@ -1,0 +1,118 @@
+-- Insert data into Branch
+INSERT INTO Branch (manager_id, branch_id, Address) VALUES (1, 1, '123 Main St, Karachi, Sindh');
+INSERT INTO Branch (manager_id, branch_id, Address) VALUES (2, 2, '456 Market St, Lahore, Punjab');
+INSERT INTO Branch (manager_id, branch_id, Address) VALUES (3, 3, '789 Hill Rd, Islamabad, ICT');
+INSERT INTO Branch (manager_id, branch_id, Address) VALUES (4, 4, '1010 Maple Ave, Quetta, Balochistan');
+INSERT INTO Branch (manager_id, branch_id, Address) VALUES (5, 5, '2020 Pine St, Peshawar, KPK');
+INSERT INTO Branch (manager_id, branch_id, Address) VALUES (6, 6, '3030 Oak St, Multan, Punjab');
+INSERT INTO Branch (manager_id, branch_id, Address) VALUES (7, 7, '4040 Elm St, Faisalabad, Punjab');
+INSERT INTO Branch (manager_id, branch_id, Address) VALUES (8, 8, '5050 Birch Rd, Rawalpindi, Punjab');
+INSERT INTO Branch (manager_id, branch_id, Address) VALUES (9, 9, '6060 Cedar St, Gujranwala, Punjab');
+INSERT INTO Branch (manager_id, branch_id, Address) VALUES (10, 10, '7070 Spruce St, Sialkot, Punjab');
+
+-- Insert data into Customer
+INSERT INTO Customer (customer_id, book_issued, name, address, reg_date, branch_id) VALUES (1, 'Book A', 'Ali Khan', '123 Main St, Karachi, Sindh', '2023-01-01', 1);
+INSERT INTO Customer (customer_id, book_issued, name, address, reg_date, branch_id) VALUES (2, 'Book B', 'Sara Ahmed', '456 Market St, Lahore, Punjab', '2023-02-01', 2);
+INSERT INTO Customer (customer_id, book_issued, name, address, reg_date, branch_id) VALUES (3, 'Book C', 'Usman Ali', '789 Hill Rd, Islamabad, ICT', '2023-03-01', 3);
+INSERT INTO Customer (customer_id, book_issued, name, address, reg_date, branch_id) VALUES (4, 'Book D', 'Fatima Tariq', '1010 Maple Ave, Quetta, Balochistan', '2023-04-01', 4);
+INSERT INTO Customer (customer_id, book_issued, name, address, reg_date, branch_id) VALUES (5, 'Book E', 'Hassan Raza', '2020 Pine St, Peshawar, KPK', '2023-05-01', 5);
+INSERT INTO Customer (customer_id, book_issued, name, address, reg_date, branch_id) VALUES (6, 'Book F', 'Ayesha Khan', '3030 Oak St, Multan, Punjab', '2023-06-01', 6);
+INSERT INTO Customer (customer_id, book_issued, name, address, reg_date, branch_id) VALUES (7, 'Book G', 'Bilal Malik', '4040 Elm St, Faisalabad, Punjab', '2023-07-01', 7);
+INSERT INTO Customer (customer_id, book_issued, name, address, reg_date, branch_id) VALUES (8, 'Book H', 'Nida Zafar', '5050 Birch Rd, Rawalpindi, Punjab', '2023-08-01', 8);
+INSERT INTO Customer (customer_id, book_issued, name, address, reg_date, branch_id) VALUES (9, 'Book I', 'Omar Siddiqui', '6060 Cedar St, Gujranwala, Punjab', '2023-09-01', 9);
+INSERT INTO Customer (customer_id, book_issued, name, address, reg_date, branch_id) VALUES (10, 'Book J', 'Zainab Ali', '7070 Spruce St, Sialkot, Punjab', '2023-10-01', 10);
+
+-- Insert data into Authentication_system
+INSERT INTO Authentication_system (login_id, password) VALUES (1, 'password123');
+INSERT INTO Authentication_system (login_id, password) VALUES (2, 'password234');
+INSERT INTO Authentication_system (login_id, password) VALUES (3, 'password345');
+INSERT INTO Authentication_system (login_id, password) VALUES (4, 'password456');
+INSERT INTO Authentication_system (login_id, password) VALUES (5, 'password567');
+INSERT INTO Authentication_system (login_id, password) VALUES (6, 'password678');
+INSERT INTO Authentication_system (login_id, password) VALUES (7, 'password789');
+INSERT INTO Authentication_system (login_id, password) VALUES (8, 'password890');
+INSERT INTO Authentication_system (login_id, password) VALUES (9, 'password901');
+INSERT INTO Authentication_system (login_id, password) VALUES (10, 'password012');
+
+-- Insert data into Publisher
+INSERT INTO Publisher (publisher_id, category, retail_price, publish_year) VALUES (1, 'Fiction', 500, 2020);
+INSERT INTO Publisher (publisher_id, category, retail_price, publish_year) VALUES (2, 'Non-Fiction', 600, 2019);
+INSERT INTO Publisher (publisher_id, category, retail_price, publish_year) VALUES (3, 'Science', 700, 2018);
+INSERT INTO Publisher (publisher_id, category, retail_price, publish_year) VALUES (4, 'Technology', 800, 2017);
+INSERT INTO Publisher (publisher_id, category, retail_price, publish_year) VALUES (5, 'History', 900, 2016);
+INSERT INTO Publisher (publisher_id, category, retail_price, publish_year) VALUES (6, 'Geography', 1000, 2015);
+INSERT INTO Publisher (publisher_id, category, retail_price, publish_year) VALUES (7, 'Biography', 1100, 2014);
+INSERT INTO Publisher (publisher_id, category, retail_price, publish_year) VALUES (8, 'Fantasy', 1200, 2013);
+INSERT INTO Publisher (publisher_id, category, retail_price, publish_year) VALUES (9, 'Mystery', 1300, 2012);
+INSERT INTO Publisher (publisher_id, category, retail_price, publish_year) VALUES (10, 'Romance', 1400, 2011);
+
+-- Insert data into Author
+INSERT INTO Author (title, author_name) VALUES ('Book A', 'Author A');
+INSERT INTO Author (title, author_name) VALUES ('Book B', 'Author B');
+INSERT INTO Author (title, author_name) VALUES ('Book C', 'Author C');
+INSERT INTO Author (title, author_name) VALUES ('Book D', 'Author D');
+INSERT INTO Author (title, author_name) VALUES ('Book E', 'Author E');
+INSERT INTO Author (title, author_name) VALUES ('Book F', 'Author F');
+INSERT INTO Author (title, author_name) VALUES ('Book G', 'Author G');
+INSERT INTO Author (title, author_name) VALUES ('Book H', 'Author H');
+INSERT INTO Author (title, author_name) VALUES ('Book I', 'Author I');
+INSERT INTO Author (title, author_name) VALUES ('Book J', 'Author J');
+
+-- Insert data into Staff
+INSERT INTO Staff (staff_id, name, salary, branch_id, login_id, customer_id) VALUES (1, 'Staff A', 20000, 1, 1, 1);
+INSERT INTO Staff (staff_id, name, salary, branch_id, login_id, customer_id) VALUES (2, 'Staff B', 22000, 2, 2, 2);
+INSERT INTO Staff (staff_id, name, salary, branch_id, login_id, customer_id) VALUES (3, 'Staff C', 24000, 3, 3, 3);
+INSERT INTO Staff (staff_id, name, salary, branch_id, login_id, customer_id) VALUES (4, 'Staff D', 26000, 4, 4, 4);
+INSERT INTO Staff (staff_id, name, salary, branch_id, login_id, customer_id) VALUES (5, 'Staff E', 28000, 5, 5, 5);
+INSERT INTO Staff (staff_id, name, salary, branch_id, login_id, customer_id) VALUES (6, 'Staff F', 30000, 6, 6, 6);
+INSERT INTO Staff (staff_id, name, salary, branch_id, login_id, customer_id) VALUES (7, 'Staff G', 32000, 7, 7, 7);
+INSERT INTO Staff (staff_id, name, salary, branch_id, login_id, customer_id) VALUES (8, 'Staff H', 34000, 8, 8, 8);
+INSERT INTO Staff (staff_id, name, salary, branch_id, login_id, customer_id) VALUES (9, 'Staff I', 36000, 9, 9, 9);
+INSERT INTO Staff (staff_id, name, salary, branch_id, login_id, customer_id) VALUES (10, 'Staff J', 38000, 10, 10, 10);
+
+-- Insert data into Book
+INSERT INTO Book (book_id, branch_id, publisher_id, title) VALUES (1, 1, 1, 'Book A');
+INSERT INTO Book (book_id, branch_id, publisher_id, title) VALUES (2, 2, 2, 'Book B');
+INSERT INTO Book (book_id, branch_id, publisher_id, title) VALUES (3, 3, 3, 'Book C');
+INSERT INTO Book (book_id, branch_id, publisher_id, title) VALUES (4, 4, 4, 'Book D');
+INSERT INTO Book (book_id, branch_id, publisher_id, title) VALUES (5, 5, 5, 'Book E');
+INSERT INTO Book (book_id, branch_id, publisher_id, title) VALUES (6, 6, 6, 'Book F');
+INSERT INTO Book (book_id, branch_id, publisher_id, title) VALUES (7, 7, 7, 'Book G');
+INSERT INTO Book (book_id, branch_id, publisher_id, title) VALUES (8, 8, 8, 'Book H');
+INSERT INTO Book (book_id, branch_id, publisher_id, title) VALUES (9, 9, 9, 'Book I');
+INSERT INTO Book (book_id, branch_id, publisher_id, title) VALUES (10, 10, 10, 'Book J');
+
+-- Insert data into updates
+INSERT INTO updates (login_id, book_id) VALUES (1, 1);
+INSERT INTO updates (login_id, book_id) VALUES (2, 2);
+INSERT INTO updates (login_id, book_id) VALUES (3, 3);
+INSERT INTO updates (login_id, book_id) VALUES (4, 4);
+INSERT INTO updates (login_id, book_id) VALUES (5, 5);
+INSERT INTO updates (login_id, book_id) VALUES (6, 6);
+INSERT INTO updates (login_id, book_id) VALUES (7, 7);
+INSERT INTO updates (login_id, book_id) VALUES (8, 8);
+INSERT INTO updates (login_id, book_id) VALUES (9, 9);
+INSERT INTO updates (login_id, book_id) VALUES (10, 10);
+
+-- Insert data into Issue_Status
+INSERT INTO Issue_Status (issue_id, issue_date, staus, customer_id, book_id) VALUES (1, '2023-01-15', 'Issued', 1, 1);
+INSERT INTO Issue_Status (issue_id, issue_date, staus, customer_id, book_id) VALUES (2, '2023-02-15', 'Returned', 2, 2);
+INSERT INTO Issue_Status (issue_id, issue_date, staus, customer_id, book_id) VALUES (3, '2023-03-15', 'Issued', 3, 3);
+INSERT INTO Issue_Status (issue_id, issue_date, staus, customer_id, book_id) VALUES (4, '2023-04-15', 'Returned', 4, 4);
+INSERT INTO Issue_Status (issue_id, issue_date, staus, customer_id, book_id) VALUES (5, '2023-05-15', 'Issued', 5, 5);
+INSERT INTO Issue_Status (issue_id, issue_date, staus, customer_id, book_id) VALUES (6, '2023-06-15', 'Returned', 6, 6);
+INSERT INTO Issue_Status (issue_id, issue_date, staus, customer_id, book_id) VALUES (7, '2023-07-15', 'Issued', 7, 7);
+INSERT INTO Issue_Status (issue_id, issue_date, staus, customer_id, book_id) VALUES (8, '2023-08-15', 'Returned', 8, 8);
+INSERT INTO Issue_Status (issue_id, issue_date, staus, customer_id, book_id) VALUES (9, '2023-09-15', 'Issued', 9, 9);
+INSERT INTO Issue_Status (issue_id, issue_date, staus, customer_id, book_id) VALUES (10, '2023-10-15', 'Returned', 10, 10);
+
+-- Data for deletion demonstration
+INSERT INTO Branch (manager_id, branch_id, Address) VALUES (11, 11, '8080 Willow St, Hyderabad, Sindh');
+INSERT INTO Customer (customer_id, book_issued, name, address, reg_date, branch_id) VALUES (11, 'Book K', 'Khalid Mehmood', '8080 Willow St, Hyderabad, Sindh', '2023-11-01', 11);
+INSERT INTO Authentication_system (login_id, password) VALUES (11, 'password345');
+INSERT INTO Publisher (publisher_id, category, retail_price, publish_year) VALUES (11, 'Drama', 1500, 2020);
+INSERT INTO Author (title, author_name) VALUES ('Book K', 'Author K');
+INSERT INTO Staff (staff_id, name, salary, branch_id, login_id, customer_id) VALUES (11, 'Staff K', 40000, 11, 11, 11);
+INSERT INTO Book (book_id, branch_id, publisher_id, title) VALUES (11, 11, 11, 'Book K');
+INSERT INTO updates (login_id, book_id) VALUES (11, 11);
+INSERT INTO Issue_Status (issue_id, issue_date, staus, customer_id, book_id) VALUES (11, '2023-11-15', 'Issued', 11, 11);

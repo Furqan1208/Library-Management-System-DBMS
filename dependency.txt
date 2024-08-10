@@ -1,0 +1,27 @@
+
+Branch
+branch_id→manager_id, Address
+
+Customer
+customer_id→book_issued, name, address, reg_date, branch_id
+
+Authentication_system
+login_id→password
+
+Publisher
+publisher_id→category, retail_price, publish_year
+
+Author
+title→author_name
+
+Staff
+staff_id→name, salary, branch_id, login_id, customer_id
+
+Book
+book_id→branch_id, publisher_id, title
+
+Updates
+login_id→book_id
+
+Issue_Status
+issue_id→issue_date, status, customer_id, book_id
